@@ -1,3 +1,5 @@
+#  A list in dictionary
+
 # store information about a pizza being ordered.
 pizza = {
     'crust' : 'thick',

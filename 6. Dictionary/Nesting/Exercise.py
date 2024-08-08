@@ -92,3 +92,20 @@ for pet in pets:
     for key, value in pet.items():
         print(f"\t{key}: {value}")
 
+
+'''Q3. Favorite Places: Make a dictionary called favorite_places. Think of three 
+names to use as keys in the dictionary, and store one to three favorite places 
+for each person. To make this exercise a bit more interesting, ask some friends 
+to name a few of their favorite places. Loop through the dictionary, and print 
+each person’s name and their favorite places.'''
+
+favourite_places = {
+    'verma' : ['shimla', 'goa', 'manali'],
+    'tony': ['kanyakumari', 'bangkok', 'london'],
+    'ronit': ['singapur', 'srinagar', 'jammu'],
+}
+
+for name , places in favourite_places.items():
+    print(f"\n{name.title()} likes the following places to tour:")
+    for place in places:
+        print(f"- {place.title()}")

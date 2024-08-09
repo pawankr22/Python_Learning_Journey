@@ -109,3 +109,55 @@ for name , places in favourite_places.items():
     print(f"\n{name.title()} likes the following places to tour:")
     for place in places:
         print(f"- {place.title()}")
+
+'''Q 4. Favorite Numbers: Modify your program from Exercise 6-2 (page 99) 
+so each person can have more than one favorite number. 
+Then print each person’s name along with their favorite numbers.'''
+
+favourite_numbers = {
+    'sneha' : [43 , 45],
+    'ramesh' : [69 , 89],
+    'dinesh' : [23 , 45],
+}
+
+for name , numbers in favourite_numbers.items(): 
+    print(f"\n{name.title()} likes the following numbers:")
+    for number in numbers:
+        print(f"-{number}")
+
+
+'''Q.5 Cities: Make a dictionary called cities. Use the names of three cities as 
+keys in your dictionary. Create a dictionary of information about each city and 
+include the country that the city is in, its approximate population, and one fact 
+about that city. The keys for each city’s dictionary should be something like 
+country, population, and fact. Print the name of each city and all of the information 
+you have stored about it.'''
+
+cities = {
+    'faridabad': {
+        'country' : 'india',
+        'population' : 2_34_0000,
+        'known-for' : 'new-delhi',
+    },
+
+    'mumbai': {
+        'country' : 'india',
+        'population' : 23_34_9090,
+        'known-for' : 'bollywood',
+    },
+
+    'kolkata': {
+        'country' : 'india',
+        'population' : 85_54_09_322,
+        'known-for' : 'mamta-banarji'
+    } 
+}
+
+for city , city_info in cities.items():
+    country = city_info['country'].title()
+    population = city_info['population']
+    popularity = city_info['known-for']
+
+    print(f"\n{city.title()} is in {country.title()}.")
+    print(f"\tIt has a population of about {population}.")
+    print(f"\tThe city is known for {popularity.title()}.")

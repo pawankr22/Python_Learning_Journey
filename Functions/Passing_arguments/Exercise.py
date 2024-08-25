@@ -10,7 +10,7 @@ def make_shirt(size,message):
     print(f"It will show the message '{message}'.")
 
 make_shirt('large' , 'Be Bold')
-make_shirt(message='readability counts' , size='medium')
+make_shirt(message='readability counts' , size='medium') # this is calling the function using keyword arguments.
 
 '''Q. Large Shirts: Modify the make_shirt() function so that shirts are large 
 by default with a message that reads I love Python. Make a large shirt and a 

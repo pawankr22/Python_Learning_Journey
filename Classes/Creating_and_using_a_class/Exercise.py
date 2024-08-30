@@ -60,3 +60,40 @@ ludvigs.describe_restaurant()
 
 mango_thai = Restaurant('mango thai', 'thai food')
 mango_thai.describe_restaurant()
+
+"""Q. Users: Make a class called User. Create two attributes called first_name
+and last_name, and then create several other attributes that are typically stored 
+in a user profile. Make a method called describe_user() that prints a summary 
+of the user’s information. Make another method called greet_user() that prints 
+a personalized greeting to the user.
+Create several instances representing different users, and call both methods 
+for each user."""
+
+class User:
+    """Create a simple user profile."""
+    def __init__(self, first_name, last_name, username, email, address):
+        """Initialize the user."""
+        self.first_name  = first_name.title()
+        self.last_name = last_name.title()
+        self.username = username
+        self.email = email
+        self.address = address.title()
+
+    def describe_user(self):
+        """Summary of the user profile."""
+        print("\n" + self.first_name + "" + self.last_name)
+        print(" username: " + self.username)
+        print(" email: " + self.username)
+        print(" location: " + self.address)
+
+    def greet_user(self):
+        """Display a personalized greetings to the user."""
+        print("\nWelcome back, " + self.username + "!")
+
+pawan = User('pawan' , 'kumar', 'p_kumar', 'cnct.pawan@gmail.com', 'faridabad')
+pawan.describe_user()
+pawan.greet_user()
+
+sweta = User('sweta' , 'priya', 's_priya', 'cnct.swewta@gmail.com', 'gurgaon')
+sweta.describe_user()
+sweta.greet_user()

@@ -8,7 +8,7 @@ print(contents)
 print("\n--- Looping over the lines: ")
 with open(filename) as f:
     for line in f:
-        print(line.rstrip())
+     print(line.rstrip())
 
 print("\n--- Storing the lines in a list: ")
 with open(filename) as f:

@@ -1,0 +1,4 @@
+This is an example of writing to an empty file.
+This is the second line added the txt file.
+This is appended line.
+This is also a appended line.
